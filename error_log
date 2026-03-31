@@ -1,0 +1,138 @@
+[30-Mar-2026 04:31:50 UTC] PHP Warning:  include(conn/dbcon.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 11
+[30-Mar-2026 04:31:50 UTC] PHP Warning:  include(conn/dbcon.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 11
+[30-Mar-2026 04:31:50 UTC] PHP Warning:  include(): Failed opening 'conn/dbcon.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 11
+[30-Mar-2026 04:31:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/sovereig/public_html/new_wms/side.php on line 12
+[30-Mar-2026 04:31:50 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home1/sovereig/public_html/new_wms/side.php on line 12
+[30-Mar-2026 04:32:08 UTC] PHP Warning:  include(conn/dbcon.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 11
+[30-Mar-2026 04:32:08 UTC] PHP Warning:  include(conn/dbcon.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 11
+[30-Mar-2026 04:32:08 UTC] PHP Warning:  include(): Failed opening 'conn/dbcon.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 11
+[30-Mar-2026 04:32:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/sovereig/public_html/new_wms/side.php on line 12
+[30-Mar-2026 04:32:08 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home1/sovereig/public_html/new_wms/side.php on line 12
+[30-Mar-2026 04:33:41 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 04:33:41 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 04:33:41 UTC] PHP Warning:  include(): Failed opening '../dist/includes/title.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 04:34:51 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 04:34:51 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 04:34:51 UTC] PHP Warning:  include(): Failed opening '../dist/includes/title.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 04:39:17 UTC] PHP Warning:  include(conn/dbcon.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index.php on line 409
+[30-Mar-2026 04:39:17 UTC] PHP Warning:  include(conn/dbcon.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index.php on line 409
+[30-Mar-2026 04:39:17 UTC] PHP Warning:  include(): Failed opening 'conn/dbcon.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/index.php on line 409
+[30-Mar-2026 04:39:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/sovereig/public_html/new_wms/index.php on line 410
+[30-Mar-2026 04:39:17 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home1/sovereig/public_html/new_wms/index.php on line 410
+[30-Mar-2026 10:05:42 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:05:42 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:05:42 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:05:47 Asia/Karachi] PHP Warning:  max(): When only one parameter is given, it must be an array in /home1/sovereig/public_html/new_wms/dash_board.php on line 530
+[30-Mar-2026 10:05:47 Asia/Karachi] PHP Warning:  max(): When only one parameter is given, it must be an array in /home1/sovereig/public_html/new_wms/dash_board.php on line 530
+[30-Mar-2026 10:11:30 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:11:30 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:11:30 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:11:31 Asia/Karachi] PHP Warning:  max(): When only one parameter is given, it must be an array in /home1/sovereig/public_html/new_wms/dash_board.php on line 530
+[30-Mar-2026 10:11:31 Asia/Karachi] PHP Warning:  max(): When only one parameter is given, it must be an array in /home1/sovereig/public_html/new_wms/dash_board.php on line 530
+[30-Mar-2026 10:12:00 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:12:00 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:12:00 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 181
+[30-Mar-2026 10:12:04 Asia/Karachi] PHP Warning:  max(): When only one parameter is given, it must be an array in /home1/sovereig/public_html/new_wms/dash_board.php on line 530
+[30-Mar-2026 10:12:04 Asia/Karachi] PHP Warning:  max(): When only one parameter is given, it must be an array in /home1/sovereig/public_html/new_wms/dash_board.php on line 530
+[30-Mar-2026 05:13:58 UTC] PHP Warning:  include(side_check.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 66
+[30-Mar-2026 05:13:58 UTC] PHP Warning:  include(side_check.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 66
+[30-Mar-2026 05:13:58 UTC] PHP Warning:  include(): Failed opening 'side_check.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 66
+[30-Mar-2026 05:13:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home1/sovereig/public_html/new_wms/dash_board.php on line 89
+[30-Mar-2026 05:13:58 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home1/sovereig/public_html/new_wms/dash_board.php on line 89
+[30-Mar-2026 10:16:38 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:16:38 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:16:38 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 05:17:14 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 05:17:14 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 05:17:14 UTC] PHP Warning:  include(): Failed opening '../dist/includes/title.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 10:17:18 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:17:18 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:17:18 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 05:25:27 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 05:25:27 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 05:25:27 UTC] PHP Warning:  include(): Failed opening '../dist/includes/title.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 10:25:29 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:25:29 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:25:29 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 05:29:13 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 05:29:13 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 05:29:13 UTC] PHP Warning:  include(): Failed opening '../dist/includes/title.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 10:29:16 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:29:16 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 10:29:16 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 06:43:02 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 06:43:02 UTC] PHP Warning:  include(../dist/includes/title.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 06:43:02 UTC] PHP Warning:  include(): Failed opening '../dist/includes/title.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/side.php on line 22
+[30-Mar-2026 11:43:05 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 11:43:05 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 11:43:05 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 07:14:37 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home1/sovereig/public_html/new_wms/index.php on line 359
+[30-Mar-2026 07:15:13 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home1/sovereig/public_html/new_wms/index.php on line 359
+[30-Mar-2026 07:17:12 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home1/sovereig/public_html/new_wms/index.php on line 359
+[30-Mar-2026 07:17:14 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home1/sovereig/public_html/new_wms/index.php on line 359
+[30-Mar-2026 07:21:19 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home1/sovereig/public_html/new_wms/index.php on line 372
+[30-Mar-2026 07:21:23 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home1/sovereig/public_html/new_wms/index.php on line 372
+[30-Mar-2026 12:27:17 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 12:27:17 Asia/Karachi] PHP Warning:  include(index_tp2.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 12:27:17 Asia/Karachi] PHP Warning:  include(): Failed opening 'index_tp2.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/dash_board.php on line 818
+[30-Mar-2026 07:52:15 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction1.php on line 12
+[30-Mar-2026 07:52:15 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction1.php on line 12
+[30-Mar-2026 07:52:15 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/inward_transaction1.php on line 12
+[30-Mar-2026 07:52:37 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:52:37 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:52:37 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:52:45 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:52:45 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:52:45 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:53:52 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:53:52 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:53:52 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:58:24 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:58:24 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 07:58:24 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 12
+[30-Mar-2026 09:49:52 UTC] PHP Warning:  include(DBController.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:49:52 UTC] PHP Warning:  include(DBController.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:49:52 UTC] PHP Warning:  include(): Failed opening 'DBController.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:49:52 UTC] PHP Fatal error:  Uncaught Error: Class 'DBController' not found in /home1/sovereig/public_html/new_wms/index5.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/sovereig/public_html/new_wms/index5.php on line 3
+[30-Mar-2026 09:52:12 UTC] PHP Warning:  include(DBController.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:52:12 UTC] PHP Warning:  include(DBController.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:52:12 UTC] PHP Warning:  include(): Failed opening 'DBController.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:52:12 UTC] PHP Fatal error:  Uncaught Error: Class 'DBController' not found in /home1/sovereig/public_html/new_wms/index5.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/sovereig/public_html/new_wms/index5.php on line 3
+[30-Mar-2026 09:55:05 UTC] PHP Warning:  include(DBController.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:55:05 UTC] PHP Warning:  include(DBController.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:55:05 UTC] PHP Warning:  include(): Failed opening 'DBController.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/index5.php on line 2
+[30-Mar-2026 09:55:05 UTC] PHP Fatal error:  Uncaught Error: Class 'DBController' not found in /home1/sovereig/public_html/new_wms/index5.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/sovereig/public_html/new_wms/index5.php on line 3
+[31-Mar-2026 09:43:40 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 09:43:40 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 09:43:40 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:15:04 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:15:04 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:15:04 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:45:00 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:45:00 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:45:00 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 06:52:36 UTC] PHP Parse error:  syntax error, unexpected end of file in /home1/sovereig/public_html/new_wms/inward_transaction.php on line 675
+[31-Mar-2026 11:53:57 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:53:57 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:53:57 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:56:50 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:56:50 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:56:50 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:57:17 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:57:17 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 11:57:17 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 13:04:54 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 13:04:54 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 13:04:54 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 14:37:23 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 14:37:23 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
+[31-Mar-2026 14:37:23 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/sovereig/public_html/new_wms/final_barcode.php on line 437
