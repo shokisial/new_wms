@@ -150,5 +150,5 @@ $result = mysqli_query($con, $studentQuery);
      }
 }
 echo 'File Uload Sucessfull';
-echo "<script>document.location='https://sovereign-wh.com/AdminLTE/pages/tables/outward_transaction.php'</script>"; 
+echo "<script>document.location='https://sovereign-wh.com/new_wms/outward_transaction.php'</script>"; 
 ?>

@@ -536,20 +536,18 @@ $av_cls = array('ca-1','ca-2','ca-3','ca-4','ca-5');
         <!-- ASN Selection -->
         <div class="form-section">
           <div class="form-section-title">Select ASN Document(s)</div>
-          <label>ASN No.</label>
-          <div class="asn-grid">
-              
+          <div class="ff" >
             <?php foreach ($asns as $asn): ?>
-           
             <label class="asn-check" id="lbl-<?php echo htmlspecialchars($asn['rec_dnno']); ?>">
               <input type="checkbox" name="grn_no[]" value="<?php echo htmlspecialchars($asn['rec_dnno']); ?>"
-                     onchange="toggleCheck(this,'lbl-<?php echo htmlspecialchars($asn['rec_dnno']); ?>')">
-              <span class="asn-check-label"><?php echo htmlspecialchars($asn['rec_dnno']); ?></span>
+                     onchange="toggleCheck(this,'lbl-<?php echo htmlspecialchars($asn['rec_dnno']); ?>')" >
+              <span class="asn-check-label">
+  <span class="col-left"><?php echo htmlspecialchars($asn['rec_dnno']); ?></span>
+  <span class="col-center"><?php echo htmlspecialchars($asn['truck_no']); ?></span>
+  <span class="col-right"><?php echo htmlspecialchars($asn['asn_qty']); ?></span>
+</span>
             </label>
-            <div class="ff">
-              <input type="text"  placeholder="<?php echo $asn['truck_no'] . '   -  ' . $asn['asn_qty']; ?>" disabled>
-            </div>
-            
+            <br>
             <?php endforeach; ?>
           </div>
         </div>
@@ -562,23 +560,23 @@ $av_cls = array('ca-1','ca-2','ca-3','ca-4','ca-5');
 
         <!-- Transporter & Vehicle -->
         <div class="form-section">
-          <div class="form-section-title">Driver &amp; Vehicle</div>
+          <div class="form-section-title">Transporter &amp; Vehicle</div>
           <div class="form-grid">
             <div class="ff" style="grid-column:1/-1">
-              <label>Vehicle</label>
-              <div class="sel-wrap"> 
-                <select name="vehicle_type" required>
-                  <option value="">— Select Vehicle Type —</option>
-                 <option value="14FT">14FT</option>
-                 <option value="16FT">16FT</option>
-                 <option value="18FT">18FT</option>
-                 <option value="20FT">20FT</option>
-                 <option value="30FT">30FT</option>
-                 <option value="40FT">40FT</option>
-                 <option value="45FT">45FT</option>
-                 <option value="Pickup">Pickup</option>
-                 <option value="Other">Other</option>
-                </select>
+              <label>Vehicle Type</label>
+              <div class="sel-wrap">
+                <select name="trns_name" required>
+                  <option value="">— Select Type —</option>
+                         <option value="14FT">14FT</option>
+                         <option value="16FT">16FT</option>
+                         <option value="18FT">18FT</option>
+                         <option value="20FT">20FT</option>
+                         <option value="30FT">30FT</option>
+                         <option value="40FT">40FT</option>
+                         <option value="45FT">45FT</option>
+                         <option value="Pickup">Pickup</option>
+                         <option value="Other">Other</option>
+                </select>    
               </div>
             </div>
             <div class="ff">
@@ -586,17 +584,8 @@ $av_cls = array('ca-1','ca-2','ca-3','ca-4','ca-5');
               <input type="text" name="vehicle_no" placeholder="e.g. LEA-4521" required>
             </div>
             <div class="ff">
-              <label>Vehicle Temprature</label>
-              <input type="text" name="veh_temp" placeholder="e.g. -14 " required>
-            </div>
-            
-            <div class="ff">
-              <label>Product Temprature</label>
-              <input type="text" name="item_temp" placeholder="e.g. -10" required>
-            </div>
-            <div class="ff">
-              <label>Seal No.</label>
-              <input type="text" name="seal" placeholder="e.g. 1445 " required>
+              <label>Transporter</label>
+              <input type="text" name="trns_name" placeholder="e.g. ALC Pakistan" required>
             </div>
           </div>
         </div>
@@ -624,15 +613,25 @@ $av_cls = array('ca-1','ca-2','ca-3','ca-4','ca-5');
         <div class="form-section">
           <div class="form-section-title">Dates &amp; Times</div>
           <div class="form-grid">
+           
             <div class="ff">
               <label>Reporting Date &amp; Time</label>
-              <input type="datetime-local" name="rptdate" required>
+              <input type="datetime-local" name="indate" required>
             </div>
+            <div class="ff">
+              <label>Veh. Temprature</label>
+              <input type="text" name="veh_temp" placeholder="14" required>
+            </div>
+        <?php /*    
             <div class="ff">
               <label>In Date &amp; Time</label>
               <input type="datetime-local" name="indate" required>
             </div>
-            
+            <div class="ff" style="grid-column:1/-1">
+              <label>Out Date &amp; Time</label>
+              <input type="datetime-local" name="outdate">
+            </div>
+        */?>    
           </div>
         </div>
 
