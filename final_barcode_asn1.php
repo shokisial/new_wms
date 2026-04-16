@@ -5,8 +5,9 @@ if (empty($_SESSION['branch'])) { header('Location:../index.php'); exit; }
 $branch = $_SESSION['branch'];
 $id     = $_SESSION['id'];
 $name   = isset($_SESSION['name']) ? $_SESSION['name'] : 'User';
-
+$user_group = $_SESSION['user_group']; 
 include('conn/dbcon.php');
+include('side_check.php');
 
 // Resolve doc number from POST or SESSION
 if (isset($_POST['sub'])) {
@@ -65,7 +66,7 @@ $item_count = count($items);
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=-1">
   <title>Sovereign WMS — ASN Receiving</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -285,54 +286,7 @@ $item_count = count($items);
 
 <div class="layout">
 
-  <!-- ══ SIDEBAR ══════════════════════════════════════════════════════════ -->
-  <aside class="sidebar">
-    <div class="nav-sect">Main</div>
-    <a href="new_dash.php" class="nav-item"><svg viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>Dashboard</a>
-    <div class="nav-sect">Operations</div>
-    <div class="nav-grp open">
-      <div class="nav-grp-hdr"><svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Inbound<svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="nav-sub-list">
-        <a href="inward_transaction.php" class="nav-sub">A.S.N</a>
-        <a href="gatepass.php"           class="nav-sub">Gate Pass</a>
-        <a href="final_barcode.php"      class="nav-sub">Receive</a>
-        <a href="final_barcode_asn1.php" class="nav-sub active">ASN Detail</a>
-        <a href="final_location.php"     class="nav-sub">Location</a>
-        <a href="index_stkveh.php"       class="nav-sub">Location List</a>
-      </div>
-    </div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr"><svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M7 11l-4-4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Outbound<svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="nav-sub-list">
-        <a href="outward_transaction.php" class="nav-sub">Transfer Note</a>
-        <a href="final_out2.php"          class="nav-sub">Order Preparation</a>
-        <a href="picking_summery.php"     class="nav-sub">Picking Summary</a>
-        <a href="seg_list.php"            class="nav-sub">Segregation List</a>
-        <a href="gatepass_out.php"        class="nav-sub">Gate Pass</a>
-      </div>
-    </div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr"><svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M2 5h8a3 3 0 0 1 0 6H6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 3L2 5l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Return<svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="nav-sub-list">
-        <a href="final_barcode_return.php" class="nav-sub">Return Stock</a>
-        <a href="gatepass_newreturn.php"   class="nav-sub">Return Gate Pass</a>
-      </div>
-    </div>
-    <div class="nav-sep"></div>
-    <div class="nav-sect">Warehouse</div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr"><svg class="ic" viewBox="0 0 14 14" fill="none"><rect x="2" y="1" width="10" height="12" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4.5 5h5M4.5 7.5h5M4.5 10h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Reports<svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="nav-sub-list">
-        <a href="inbound_report.php"  class="nav-sub">Inbound Report</a>
-        <a href="outbound_report.php" class="nav-sub">Outbound Report</a>
-        <a href="expire.php"          class="nav-sub">Expiry Report</a>
-        <a href="index_ledger.php"    class="nav-sub">Customer Ledger</a>
-      </div>
-    </div>
-    <div class="nav-sep"></div>
-    <a href="logout.php" class="nav-item" style="color:#5c6e8a;margin-top:4px"><svg viewBox="0 0 14 14" fill="none"><path d="M9 7H1M5 4l-3 3 3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 2h2.5A1.5 1.5 0 0 1 13 3.5v7A1.5 1.5 0 0 1 11.5 12H9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Logout</a>
-  </aside>
-
+ 
   <!-- ══ MAIN CONTENT ═════════════════════════════════════════════════════ -->
   <div class="main">
 

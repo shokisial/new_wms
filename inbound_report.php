@@ -2,12 +2,17 @@
 session_start();
 if (empty($_SESSION['id']))     { header('Location:../index.php'); exit; }
 if (empty($_SESSION['branch'])) { header('Location:../index.php'); exit; }
+
 $branch = $_SESSION['branch'];
 $id     = $_SESSION['id'];
 $name   = isset($_SESSION['name']) ? $_SESSION['name'] : 'User';
 
-include('conn/dbcon.php');
+$ssd = isset($_POST['optionlist']) ? $_POST['optionlist'] : '';
+$user_group = $_SESSION['user_group']; 
 
+include('conn/dbcon.php');
+?>
+<?php include('side_check.php'); 
 // ── Branch name ───────────────────────────────────────────────────────────────
 $branchRow = mysqli_fetch_array(mysqli_query($con, "SELECT branch_name FROM branch WHERE branch_id='$branch'"));
 $branch_name = $branchRow ? $branchRow['branch_name'] : $branch;
@@ -296,72 +301,7 @@ if (isset($_POST['export']) && !empty($productResult)) {
 
 <div class="layout">
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="nav-sect">Main</div>
-    <a href="new_dash.php" class="nav-item">
-      <svg viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
-      Dashboard
-    </a>
-    <div class="nav-sect">Operations</div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Inbound
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="inward_transaction.php" class="nav-sub">A.S.N</a>
-        <a href="gatepass.php"           class="nav-sub">Gate Pass</a>
-        <a href="final_barcode.php"      class="nav-sub">Receive</a>
-        <a href="final_location.php"     class="nav-sub">Location</a>
-        <a href="index_stkveh.php"       class="nav-sub">Location List</a>
-      </div>
-    </div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M7 11l-4-4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Outbound
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="seg_list.php"     class="nav-sub">Segregation List</a>
-        <a href="picking_list.php" class="nav-sub">Picking List</a>
-        <a href="gatepass_new.php" class="nav-sub">Outbound Gate Pass</a>
-      </div>
-    </div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M6 3l-4 4 4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Return
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="final_barcode_return.php" class="nav-sub">Return Stock</a>
-        <a href="gatepass_newreturn.php"   class="nav-sub">Return Gate Pass</a>
-      </div>
-    </div>
-    <div class="nav-sep"></div>
-    <div class="nav-sect">Warehouse</div>
-    <div class="nav-grp open">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><rect x="2" y="1" width="10" height="12" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4.5 5h5M4.5 7.5h5M4.5 10h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-        Reports
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="inbound_report.php"  class="nav-sub active">Inbound Report</a>
-        <a href="outbound_report.php" class="nav-sub">Outbound Report</a>
-        <a href="expire.php"          class="nav-sub">Expiry Report</a>
-        <a href="index_ledger.php"    class="nav-sub">Customer Ledger</a>
-      </div>
-    </div>
-    <div class="nav-sep"></div>
-    <a href="logout.php" class="nav-item" style="color:#5c6e8a;margin-top:4px">
-      <svg viewBox="0 0 14 14" fill="none"><path d="M9 7H1M5 4l-3 3 3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 2h2.5A1.5 1.5 0 0 1 13 3.5v7A1.5 1.5 0 0 1 11.5 12H9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-      Logout
-    </a>
-  </aside>
+  
 
   <!-- Main -->
   <div class="main">

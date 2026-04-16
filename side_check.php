@@ -12,4 +12,7 @@ $user_group = $_SESSION['user_group'];
 
 include('conn/dbcon.php');
 ?>
-<?php include('side_check.php');  ?>
+<?php if($user_group==='1') { include('side_main.php'); } 
+if($user_group==='0') { include('side_operator.php'); }
+
+?>
