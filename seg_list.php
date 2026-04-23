@@ -5,9 +5,11 @@ if (empty($_SESSION['branch'])) { header('Location:../index.php'); exit; }
 $branch = $_SESSION['branch'];
 $id     = $_SESSION['id'];
 $name   = isset($_SESSION['name']) ? $_SESSION['name'] : 'User';
+$user_group = $_SESSION['user_group']; 
 
 include('conn/dbcon.php');
 include('DBController.php');
+
 
 $orno     = $_POST['rec']      ?? '';
 $pick_dat = $_POST['pick_dat'] ?? '';
@@ -79,7 +81,7 @@ foreach ($productResult as $r) { $qt12 += $r['stockout_dnqty']; }
     .branch-pill strong { color: #fff; font-weight: 500; }
     .avatar { width: 30px; height: 30px; border-radius: 50%; background: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: #fff; flex-shrink: 0; }
 
-    .layout { display: flex; padding-top: var(--topbar-h); min-height: 100vh; }
+    .layout { display: flex; padding-top: var(--topbar-h); min-height: 100vh; width: 100%; overflow-x: hidden; }
 
     /* ── Sidebar ── */
     .sidebar { position: fixed; top: var(--topbar-h); left: 0; bottom: 0; width: var(--sidebar-w); background: var(--navy); overflow-y: auto; padding: 6px 0 24px; border-right: 1px solid #253350; z-index: 90; }
@@ -105,7 +107,7 @@ foreach ($productResult as $r) { $qt12 += $r['stockout_dnqty']; }
     .nav-sep { height: 1px; background: #253350; margin: 8px 14px; }
 
     /* ── Main ── */
-    .main { margin-left: var(--sidebar-w); flex: 1; padding: 22px 26px 40px; }
+    .main { margin-left: var(--sidebar-w); flex: 1; padding: 22px 26px 40px; min-width: 0; width: calc(100% - var(--sidebar-w)); }
     .crumb { font-size: 11px; color: var(--text3); display: flex; align-items: center; gap: 5px; margin-bottom: 10px; }
     .crumb a { color: var(--text2); text-decoration: none; }
     .ph { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px; gap: 12px; flex-wrap: wrap; }
@@ -114,7 +116,7 @@ foreach ($productResult as $r) { $qt12 += $r['stockout_dnqty']; }
     .ph-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 
     /* ── Filter Card ── */
-    .filter-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-bottom: 20px; display: flex; align-items: flex-end; gap: 14px; flex-wrap: wrap; }
+    .filter-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-bottom: 20px; display: flex; align-items: flex-end; gap: 14px; flex-wrap: wrap; width: 100%; }
     .fc-group { display: flex; flex-direction: column; gap: 5px; }
     .fc-label { font-size: 10.5px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .06em; }
     .fc-input, .fc-select { height: 36px; padding: 0 12px; border: 1px solid var(--border2); border-radius: 7px; font-size: 12px; font-family: 'Inter', sans-serif; color: var(--text1); background: var(--bg); outline: none; transition: border .15s; }
@@ -137,7 +139,7 @@ foreach ($productResult as $r) { $qt12 += $r['stockout_dnqty']; }
     .stat-sub { font-size: 10px; color: var(--text3); margin-top: 2px; }
 
     /* ── Card ── */
-    .card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; width: 100%; }
     .card-hdr { padding: 12px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
     .card-hdr-title { font-size: 13px; font-weight: 600; color: var(--text1); }
     .card-hdr-meta  { font-size: 11px; color: var(--text3); }
@@ -245,74 +247,7 @@ foreach ($productResult as $r) { $qt12 += $r['stockout_dnqty']; }
 
 <div class="layout">
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="nav-sect">Main</div>
-    <a href="new_dash.php" class="nav-item">
-      <svg viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="1" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="1" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="8" y="8" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
-      Dashboard
-    </a>
-    <div class="nav-sect">Operations</div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Inbound
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="inward_transaction.php" class="nav-sub">A.S.N</a>
-        <a href="gatepass.php"           class="nav-sub">Gate Pass</a>
-        <a href="final_barcode.php"      class="nav-sub">Receive</a>
-        <a href="final_location.php"     class="nav-sub">Location</a>
-        <a href="index_stkveh.php"       class="nav-sub">Location List</a>
-      </div>
-    </div>
-    <div class="nav-grp open">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M7 11l-4-4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Outbound
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="outward_transaction.php" class="nav-sub">Transfer Note</a>
-        <a href="final_out2.php"          class="nav-sub">Order Preparation</a>
-        <a href="picking_summery.php"     class="nav-sub">Picking Summary</a>
-        <a href="seg_list.php"            class="nav-sub active">Segregation List</a>
-        <a href="gatepass_out.php"        class="nav-sub">Gate Pass</a>
-      </div>
-    </div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><path d="M2 5h8a3 3 0 0 1 0 6H6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 3L2 5l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Return
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="final_barcode_return.php" class="nav-sub">Return Stock</a>
-        <a href="gatepass_newreturn.php"   class="nav-sub">Return Gate Pass</a>
-      </div>
-    </div>
-    <div class="nav-sep"></div>
-    <div class="nav-sect">Warehouse</div>
-    <div class="nav-grp">
-      <div class="nav-grp-hdr">
-        <svg class="ic" viewBox="0 0 14 14" fill="none"><rect x="2" y="1" width="10" height="12" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4.5 5h5M4.5 7.5h5M4.5 10h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-        Reports
-        <svg class="ch" viewBox="0 0 10 10" fill="none"><path d="M3 2l4 3-4 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="nav-sub-list">
-        <a href="inbound_report.php"  class="nav-sub">Inbound Report</a>
-        <a href="outbound_report.php" class="nav-sub">Outbound Report</a>
-        <a href="expire.php"          class="nav-sub">Expiry Report</a>
-        <a href="index_ledger.php"    class="nav-sub">Customer Ledger</a>
-      </div>
-    </div>
-    <div class="nav-sep"></div>
-    <a href="logout.php" class="nav-item" style="color:#5c6e8a;margin-top:4px">
-      <svg viewBox="0 0 14 14" fill="none"><path d="M9 7H1M5 4l-3 3 3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 2h2.5A1.5 1.5 0 0 1 13 3.5v7A1.5 1.5 0 0 1 11.5 12H9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-      Logout
-    </a>
-  </aside>
+<?php include('side_check.php'); ?>
 
   <!-- Main -->
   <div class="main">

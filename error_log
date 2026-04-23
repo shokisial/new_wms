@@ -733,3 +733,29 @@ Stack trace:
 [16-Apr-2026 10:56:00 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
 [16-Apr-2026 10:56:00 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
 [16-Apr-2026 10:56:00 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
+[18-Apr-2026 10:06:25 Asia/Karachi] PHP Warning:  include(createbarcode.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/invoice_deliver1.php on line 302
+[18-Apr-2026 10:06:25 Asia/Karachi] PHP Warning:  include(createbarcode.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/invoice_deliver1.php on line 302
+[18-Apr-2026 10:06:25 Asia/Karachi] PHP Warning:  include(): Failed opening 'createbarcode.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/sovereig/public_html/new_wms/invoice_deliver1.php on line 302
+[18-Apr-2026 10:15:16 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function str_contains() in /home2/sovereig/public_html/new_wms/product.php:518
+Stack trace:
+#0 {main}
+  thrown in /home2/sovereig/public_html/new_wms/product.php on line 518
+[18-Apr-2026 10:18:54 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function str_contains() in /home2/sovereig/public_html/new_wms/product.php:444
+Stack trace:
+#0 {main}
+  thrown in /home2/sovereig/public_html/new_wms/product.php on line 444
+[18-Apr-2026 10:21:33 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function str_contains() in /home2/sovereig/public_html/new_wms/product.php:444
+Stack trace:
+#0 {main}
+  thrown in /home2/sovereig/public_html/new_wms/product.php on line 444
+[18-Apr-2026 10:30:19 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function str_contains() in /home2/sovereig/public_html/new_wms/product.php:444
+Stack trace:
+#0 {main}
+  thrown in /home2/sovereig/public_html/new_wms/product.php on line 444
+[18-Apr-2026 10:30:32 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function str_contains() in /home2/sovereig/public_html/new_wms/product.php:444
+Stack trace:
+#0 {main}
+  thrown in /home2/sovereig/public_html/new_wms/product.php on line 444
+[18-Apr-2026 12:30:47 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
+[18-Apr-2026 12:30:47 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
+[18-Apr-2026 12:30:47 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
