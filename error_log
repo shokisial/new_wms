@@ -759,3 +759,9 @@ Stack trace:
 [18-Apr-2026 12:30:47 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
 [18-Apr-2026 12:30:47 Asia/Karachi] PHP Warning:  include(rec_data.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
 [18-Apr-2026 12:30:47 Asia/Karachi] PHP Warning:  include(): Failed opening 'rec_data.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/sovereig/public_html/new_wms/final_barcode.php on line 396
+[24-Apr-2026 15:00:32 Asia/Karachi] PHP Warning:  include(createbarcode.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/recieptgrn.php on line 220
+[24-Apr-2026 15:00:32 Asia/Karachi] PHP Warning:  include(createbarcode.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/recieptgrn.php on line 220
+[24-Apr-2026 15:00:32 Asia/Karachi] PHP Warning:  include(): Failed opening 'createbarcode.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/sovereig/public_html/new_wms/recieptgrn.php on line 220
+[24-Apr-2026 15:00:32 Asia/Karachi] PHP Warning:  include(ack.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/recieptgrn.php on line 465
+[24-Apr-2026 15:00:32 Asia/Karachi] PHP Warning:  include(ack.php): failed to open stream: No such file or directory in /home2/sovereig/public_html/new_wms/recieptgrn.php on line 465
+[24-Apr-2026 15:00:32 Asia/Karachi] PHP Warning:  include(): Failed opening 'ack.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/sovereig/public_html/new_wms/recieptgrn.php on line 465
